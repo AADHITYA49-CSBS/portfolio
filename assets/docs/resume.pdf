@@ -1,0 +1,67 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 470 >>
+stream
+BT
+/F1 22 Tf
+50 720 Td
+(AADHITYA - Java Developer & RPA Specialist) Tj
+/F2 11 Tf
+0 -26 Td
+(Email: aadhitya.dev@gmail.com | Tamil Nadu, India) Tj
+0 -18 Td
+(GitHub: https://github.com/AADHITYA49-CSBS | Portfolio: https://aadhitya49-csbs.github.io/portfolio/) Tj
+/F1 14 Tf
+0 -40 Td
+(EDUCATION) Tj
+/F2 11 Tf
+0 -20 Td
+(Chennai Institute of Technology - B.Tech CSBS (2023 - 2026)) Tj
+0 -16 Td
+(Chinmaya Vidyalaya - Computer Science & Mathematics) Tj
+/F1 14 Tf
+0 -40 Td
+(EXPERIENCE & INTERNSHIPS) Tj
+/F2 11 Tf
+0 -20 Td
+(Accenture - Data Analytics and Visualization Intern (Nov 2024 - Dec 2024)) Tj
+0 -16 Td
+(NSIC Technical Services - Mobile Application Developer Intern (Nov 2023 - Jan 2024)) Tj
+/F1 14 Tf
+0 -40 Td
+(TECHNICAL SKILLS) Tj
+/F2 11 Tf
+0 -20 Td
+(Java, Spring Boot, React.js, MySQL, UiPath Studio, RPA, VB.NET, REST APIs, Git) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000257 00000 n 
+0000000779 00000 n 
+0000000852 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+919
+%%EOF
