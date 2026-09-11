@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadhitya | Java Developer & RPA Specialist</title>
+  <meta name="description" content="Portfolio of Aadhitya - Java Developer focused on enterprise applications, RPA automation, and scalable systems.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Outfit, Inter, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Font Awesome 6.5.1 for Tech Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand-tech" href="#home">
+        <span class="prompt-prefix">&gt;_</span>
+        <span class="brand-name">AADHITYA</span>
+        <span class="brand-dot">.dev</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#leadership">Leadership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="./assets/docs/resume.pdf" target="_blank" class="btn-nav-resume">
+              <i class="bi bi-file-earmark-arrow-down"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Left: Intro & Details -->
+        <div class="col-lg-7">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Roles & Opportunities</span>
+          </div>
+
+          <div class="hero-greeting">Hi, I'm</div>
+          <h1 class="hero-name">AADHITYA <span class="text-gradient">.</span></h1>
+
+          <div class="hero-role-container">
+            <span class="terminal-prompt-char">&gt;</span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="blinking-cursor">_</span>
+          </div>
+
+          <p class="hero-lead">
+            A Java Developer focused on engineering robust enterprise applications and exploring diverse technology domains. Starting my professional path with solid foundational depth in backend architecture, workflow automation, and relational database systems — eager to learn, contribute, and build software that empowers society.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary-tech">
+              <i class="bi bi-code-slash"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-outline-tech">
+              <i class="bi bi-chat-square-text"></i> Get In Touch
+            </a>
+            <a href="./assets/docs/resume.pdf" target="_blank" class="btn-outline-tech">
+              <i class="bi bi-download"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-social-strip">
+            <a href="https://github.com/AADHITYA49-CSBS" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aadhi04/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:aadhitya.dev@gmail.com" class="social-circle-btn" title="Send Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Animated Avatar & Orbital Badges -->
+        <div class="col-lg-5">
+          <div class="hero-avatar-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-image-card">
+              <img src="assets/images/avatar.png" alt="Aadhitya - Developer Avatar" loading="eager">
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-java">
+              <i class="fa-brands fa-java"></i>
+              <span>Java / Spring</span>
+            </div>
+            <div class="floating-badge badge-spring">
+              <i class="fa-solid fa-code"></i>
+              <span>React.js</span>
+            </div>
+            <div class="floating-badge badge-rpa">
+              <i class="fa-solid fa-robot"></i>
+              <span>UiPath RPA</span>
+            </div>
+            <div class="floating-badge badge-sql">
+              <i class="fa-solid fa-database"></i>
+              <span>MySQL / REST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Me & Education Section
+       ========================================================================== -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-person-badge"></i> BACKGROUND</span>
+        <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        <p class="section-subtitle">A glimpse into my development philosophy, foundational mindset, and academic trajectory.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- About Narrative & Pillars -->
+        <div class="col-lg-7">
+          <div class="glass-card about-card">
+            <h3 class="h4 text-white mb-3 font-mono">&gt; Engineering Philosophy</h3>
+            <p class="about-intro-text">
+              I am a dedicated <strong>Java Developer</strong> with a keen focus on architecting resilient, scalable enterprise applications and exploring emerging technology domains. Rather than chasing fleeting trends, I prioritize rigorous software craftsmanship — mastering Object-Oriented Principles, data structures, robust API design, and database normalization.
+            </p>
+            <p class="about-intro-text text-secondary mb-4">
+              My hands-on journey spans enterprise backend systems with Spring Boot, intelligent robotic process automation (RPA) workflows with UiPath, and full-stack web platforms. As a developer embarking on my professional career, I believe in continuous curiosity, rapid adaptability, and leveraging technology to create meaningful societal solutions.
+            </p>
+
+            <div class="core-pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-server"></i></div>
+                <div class="pillar-title">Enterprise Backend</div>
+                <p class="pillar-desc">Java, Spring Boot, RESTful APIs, MVC architecture, and MySQL persistence.</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-robot"></i></div>
+                <div class="pillar-title">RPA & Automation</div>
+                <p class="pillar-desc">UiPath Studio, Orchestrator, workflow scripting, and process efficiency.</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="pillar-title">Network & Systems</div>
+                <p class="pillar-desc">OSI Model, TCP/UDP protocols, routing, server debugging, and diagnostic skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Subsection -->
+        <div class="col-lg-5">
+          <div class="glass-card about-card">
+            <h3 class="h4 text-white mb-4 font-mono"><i class="bi bi-mortarboard-fill text-gradient"></i> Education</h3>
+
+            <!-- College -->
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <h4 class="edu-title">Chennai Institute of Technology</h4>
+                  <div class="edu-institution">
+                    <i class="bi bi-geo-alt"></i> Bachelor of Technology (B.Tech)
+                  </div>
+                </div>
+                <span class="edu-period">Nov 2023 – Feb 2026</span>
+              </div>
+              <p class="edu-details mt-2">
+                <strong>Specialization:</strong> Computer Science and Business Systems (CSBS)
+              </p>
+              <p class="edu-details text-muted mt-1">
+                Rigorous curriculum combining foundational computer science, algorithm design, enterprise software architecture, and modern business technology systems.
+              </p>
+            </div>
+
+            <!-- School -->
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <h4 class="edu-title">Chinmaya Vidyalaya</h4>
+                  <div class="edu-institution">
+                    <i class="bi bi-building"></i> Higher Secondary Education
+                  </div>
+                </div>
+                <span class="edu-period">High School</span>
+              </div>
+              <p class="edu-details mt-2">
+                <strong>Focus:</strong> Computer Science & Mathematics
+              </p>
+              <p class="edu-details text-muted mt-1">
+                Built analytical and quantitative problem-solving foundations through advanced mathematics and early computer programming principles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Experience & Internships Section
+       ========================================================================== -->
+  <section class="section-padding" id="experience">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-briefcase-fill"></i> INDUSTRY EXPERIENCE</span>
+        <h2 class="section-title">Professional <span class="text-gradient">Internships</span></h2>
+        <p class="section-subtitle">Real-world analytical and software engineering engagements across enterprise and technical environments.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <!-- Experience 1: Accenture -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role-title">Data Analytics and Visualization Intern</h3>
+                <div class="exp-company-badge">
+                  <i class="fa-solid fa-building-columns"></i> Accenture
+                </div>
+              </div>
+              <div class="exp-meta-badge">
+                <span class="exp-duration">Nov 2024 – Dec 2024 · 2 mos</span>
+                <span class="exp-location"><i class="bi bi-globe"></i> North America · Remote</span>
+              </div>
+            </div>
+
+            <ul class="exp-responsibilities">
+              <li>Analyzed business problem statements and transformed complex stakeholder requirements into structured analytical workflows using data research and visualization techniques.</li>
+              <li>Explored datasets, identified meaningful insights, and contributed to data-driven decision making through clear storytelling and analytical presentation approaches.</li>
+              <li>Collaborated within an analyst team environment to research solutions, improve reporting clarity, and support project finalization processes for business evaluation.</li>
+              <li>Strengthened practical understanding of problem-solving, exploratory data analysis, stakeholder communication, and real-world analytics workflows during the internship experience.</li>
+            </ul>
+
+            <div class="exp-skills-tags">
+              <span class="tag-label font-mono"><i class="bi bi-tags"></i> Core Skills:</span>
+              <span class="exp-skill-pill">Exploratory Data Analysis</span>
+              <span class="exp-skill-pill">Data Analytics</span>
+              <span class="exp-skill-pill">Data Visualization</span>
+              <span class="exp-skill-pill">Analytical Storytelling</span>
+              <span class="exp-skill-pill">Stakeholder Communication</span>
+            </div>
+          </div>
+
+          <!-- Experience 2: NSIC -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role-title">Mobile Application Developer Intern</h3>
+                <div class="exp-company-badge">
+                  <i class="fa-solid fa-microchip"></i> NSIC Technical Services Centre
+                </div>
+              </div>
+              <div class="exp-meta-badge">
+                <span class="exp-duration">Nov 2023 – Jan 2024 · 3 mos</span>
+                <span class="exp-location"><i class="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu, India · On-site</span>
+              </div>
+            </div>
+
+            <ul class="exp-responsibilities">
+              <li>Developed mobile application features using Kotlin, Java, and XML while focusing on responsive UI design and smooth user experience.</li>
+              <li>Implemented core mobile functionalities, optimized application performance, and contributed to building scalable and user-friendly Android applications.</li>
+              <li>Collaborated on debugging, testing, and refining application workflows to improve usability, stability, and overall application efficiency.</li>
+              <li>Strengthened practical knowledge in Android Studio, UI/UX design principles, mobile application architecture, and software development best practices through hands-on project development.</li>
+            </ul>
+
+            <div class="exp-skills-tags">
+              <span class="tag-label font-mono"><i class="bi bi-tags"></i> Core Skills:</span>
+              <span class="exp-skill-pill">Java</span>
+              <span class="exp-skill-pill">Kotlin</span>
+              <span class="exp-skill-pill">Android Studio</span>
+              <span class="exp-skill-pill">XML UI Design</span>
+              <span class="exp-skill-pill">Mobile Architecture</span>
+              <span class="exp-skill-pill">Debugging & Testing</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Projects Section
+       ========================================================================== -->
+  <section class="section-padding" id="projects">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-code-square"></i> WORK & DELIVERABLES</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle">Functional systems, full-stack applications, and process automation bots built with clean code and deployed live.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project 1: Librarian System -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-top-bar">
+              <i class="fa-regular fa-folder-open project-folder-icon"></i>
+              <span class="project-category-badge">Full Stack</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Librarian System</h3>
+              <p class="project-description">
+                A structured library operations platform designed to streamline book cataloging, checkout tracking, overdue notifications, and user member management with reliable backend persistence.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Render</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AADHITYA49-CSBS/LibrarianSystem" target="_blank" rel="noopener noreferrer" class="btn-project-code">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+                <a href="https://electramind-ai.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-project-live">
+                  <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: E-machines QA -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-top-bar">
+              <i class="fa-regular fa-folder-open project-folder-icon"></i>
+              <span class="project-category-badge">QA & Web App</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-machines QA</h3>
+              <p class="project-description">
+                An interactive quality assurance and test management portal engineered to verify system workflows, log diagnostic test results, and provide role-based authentication for operational integrity.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Auth</span>
+                <span class="tech-tag">QA Workflows</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AADHITYA49-CSBS/E-machinesQA" target="_blank" rel="noopener noreferrer" class="btn-project-code">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+                <a href="https://librarian-system-4ne1.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-project-live">
+                  <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Product LookUp Automation -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-top-bar">
+              <i class="fa-regular fa-folder-open project-folder-icon"></i>
+              <span class="project-category-badge">RPA & Automation</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Product LookUp Automation</h3>
+              <p class="project-description">
+                An enterprise-grade Robotic Process Automation (RPA) robot developed with UiPath Studio and VB.NET that automates product catalog querying, price parsing, and structured data compilation.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">UiPath Studio</span>
+                <span class="tech-tag">VB.NET</span>
+                <span class="tech-tag">Excel Automation</span>
+                <span class="tech-tag">JSON / API</span>
+                <span class="tech-tag">Orchestrator</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AADHITYA49-CSBS/ProductLookUp-Automation" target="_blank" rel="noopener noreferrer" class="btn-project-code w-100 justify-content-center">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Technical Skills Section
+       ========================================================================== -->
+  <section class="section-padding" id="skills">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-cpu-fill"></i> TECHNICAL TOOLKIT</span>
+        <h2 class="section-title">Skills & <span class="text-gradient">Competencies</span></h2>
+        <p class="section-subtitle">Core development technologies, automation suites, and infrastructure fundamentals I apply in daily engineering.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Category 1: Development -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon dev">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="skill-category-title">Development</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="skill-badge"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+              <span class="skill-badge"><i class="fa-brands fa-react"></i> React.js</span>
+              <span class="skill-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="skill-badge"><i class="fa-solid fa-file-code"></i> Swagger</span>
+              <span class="skill-badge"><i class="fa-solid fa-bolt"></i> Postman</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Automation -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon auto">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <h3 class="skill-category-title">Automation & RPA</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge"><i class="fa-solid fa-gears"></i> UiPath Studio</span>
+              <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> UiPath Orchestrator</span>
+              <span class="skill-badge"><i class="fa-solid fa-microchip"></i> UiPath Assistant</span>
+              <span class="skill-badge"><i class="fa-solid fa-sliders"></i> RPA</span>
+              <span class="skill-badge"><i class="fa-solid fa-terminal"></i> VB.NET</span>
+              <span class="skill-badge"><i class="fa-solid fa-cloud-arrow-up"></i> REST APIs</span>
+              <span class="skill-badge"><i class="fa-solid fa-brackets-curly"></i> JSON</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Networking & Infrastructure -->
+        <div class="col-lg-4 col-md-12">
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon net">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h3 class="skill-category-title">Networking & Infra</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge"><i class="fa-solid fa-layer-group"></i> OSI Model</span>
+              <span class="skill-badge"><i class="fa-solid fa-diagram-project"></i> TCP / UDP</span>
+              <span class="skill-badge"><i class="fa-solid fa-screwdriver-wrench"></i> Server Troubleshooting</span>
+              <span class="skill-badge"><i class="fa-solid fa-bug"></i> Resource Debugging</span>
+              <span class="skill-badge"><i class="fa-solid fa-arrows-split-up-and-left"></i> Routing & Switching</span>
+              <span class="skill-badge"><i class="fa-solid fa-plug"></i> Ports & Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Volunteering & Open Source / Leadership Section
+       ========================================================================== -->
+  <section class="section-padding" id="leadership">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-people-fill"></i> IMPACT & COMMUNITY</span>
+        <h2 class="section-title">Volunteering & <span class="text-gradient">Leadership</span></h2>
+        <p class="section-subtitle">Driving student engagement, industry partnerships, and campus sustainability initiatives.</p>
+      </div>
+
+      <!-- Zorphix Symposium Showcase Card -->
+      <div class="zorphix-showcase-card">
+        <div class="zorphix-banner-container">
+          <img src="assets/images/zorphix-banner.png" alt="Team ZORPHIX National Symposium - Chennai Institute of Technology">
+        </div>
+      </div>
+
+      <div class="volunteering-grid">
+        <!-- 1. Sponsorship Lead -->
+        <div class="vol-card">
+          <span class="vol-role-badge">Lead Role</span>
+          <h3 class="vol-title">Sponsorship Lead</h3>
+          <div class="vol-org">
+            <i class="bi bi-building"></i> Zorphix National Symposium at CIT
+          </div>
+          <p class="vol-desc">
+            Led the sponsorship and corporate partnerships team, coordinating structured outreach across several industries to secure sponsors and promote symposium initiatives on a national scale.
+          </p>
+        </div>
+
+        <!-- 2. Media Team Lead -->
+        <div class="vol-card">
+          <span class="vol-role-badge">Media & Advertising</span>
+          <h3 class="vol-title">Media Team Lead</h3>
+          <div class="vol-org">
+            <i class="bi bi-camera-reels-fill"></i> CIT Zorphix Symposium
+          </div>
+          <p class="vol-desc">
+            Spearheaded creative digital advertising campaigns, video production, promotional reels, and multi-channel publishing to amplify symposium visibility and student participation.
+          </p>
+        </div>
+
+        <!-- 3. CIT Green Campus -->
+        <div class="vol-card">
+          <span class="vol-role-badge">Community Initiative</span>
+          <h3 class="vol-title">CIT Green Campus Initiative</h3>
+          <div class="vol-org">
+            <i class="bi bi-tree-fill text-success"></i> Chennai Institute of Technology
+          </div>
+          <p class="vol-desc">
+            Volunteered in a campus-wide sustainability campaign during my first year, organizing environmental awareness workshops and promoting eco-friendly green campus practices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact & Opportunities Section (EXACT Structural Spec)
+       ========================================================================== -->
+  <section class="section-padding" id="contact">
+    <div class="container contact-section-container">
+      <div class="row g-5 align-items-center">
+        <!-- Left Column: Contact & Status Info -->
+        <div class="col-lg-6 contact-left-col">
+          <!-- Top Badge: Rounded pill container with chat icon and uppercase label -->
+          <div class="contact-top-badge">
+            <i class="bi bi-chat-dots-fill"></i>
+            <span>GET IN TOUCH</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h2 class="contact-heading">Let's Work Together</h2>
+
+          <!-- Subtext Paragraph -->
+          <p class="contact-subtext">
+            I'm currently available for full-time software engineering roles, RPA automation projects, and collaborative technical opportunities. Whether you need robust backend systems, workflow automation, or want to connect — feel free to reach out!
+          </p>
+
+          <!-- Metadata Rows -->
+          <div class="contact-metadata-list">
+            <div class="metadata-row">
+              <div class="metadata-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <span class="metadata-text">Tamil Nadu, India</span>
+            </div>
+            <div class="metadata-row">
+              <div class="metadata-icon terminal">
+                <span>&gt;_</span>
+              </div>
+              <span class="metadata-text status">Status: Open to Opportunities</span>
+            </div>
+          </div>
+
+          <!-- Social / Contact Links (Grid of button containers with icons) -->
+          <div class="contact-links-grid">
+            <a href="https://github.com/AADHITYA49-CSBS" target="_blank" rel="noopener noreferrer" class="contact-btn-box">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aadhi04/" target="_blank" rel="noopener noreferrer" class="contact-btn-box">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:aadhitya.dev@gmail.com" class="contact-btn-box">
+              <i class="bi bi-envelope-fill"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Terminal-Style Contact Form -->
+        <div class="col-lg-6">
+          <div class="terminal-outer-container">
+            <!-- Window Header Bar -->
+            <div class="terminal-header-bar">
+              <div class="terminal-control-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="terminal-title-path">~/contact-form</div>
+            </div>
+
+            <!-- Terminal Form Body -->
+            <div class="terminal-form-body">
+              <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                
+                <!-- Field 1: Name -->
+                <div class="terminal-input-group">
+                  <label for="name" class="terminal-label">$ name</label>
+                  <input type="text" id="name" name="name" class="terminal-input-control" placeholder="Your Name" required autocomplete="name">
+                </div>
+
+                <!-- Field 2: Email -->
+                <div class="terminal-input-group">
+                  <label for="email" class="terminal-label">$ email</label>
+                  <input type="email" id="email" name="_replyto" class="terminal-input-control" placeholder="your.email@example.com" required autocomplete="email">
+                </div>
+
+                <!-- Field 3: Message -->
+                <div class="terminal-input-group">
+                  <label for="message" class="terminal-label">$ message</label>
+                  <textarea id="message" name="message" class="terminal-input-control" placeholder="Tell me about your project or opportunity..." required></textarea>
+                </div>
+
+                <!-- Submit Button: Full-width button with text and icon -->
+                <button type="submit" id="submitBtn" class="btn-terminal-submit">
+                  <i class="bi bi-send-fill"></i>
+                  <span>SEND MESSAGE</span>
+                </button>
+
+                <!-- Interactive Terminal Feedback Log -->
+                <div id="terminalStatusLog" class="terminal-status-log"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="portfolio-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="text-gradient font-mono">&gt;_ AADHITYA</span>
+        </div>
+        <p class="footer-text">
+          Designed &amp; Engineered by Aadhitya · Built with HTML5, CSS3, JavaScript &amp; Bootstrap
+        </p>
+        <a href="#home" class="footer-back-top" title="Back to top" aria-label="Back to top">
+          <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

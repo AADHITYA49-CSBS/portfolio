@@ -1,0 +1,2 @@
+Place your official resume PDF file here with the filename `resume.pdf`.
+The portfolio "Download Resume" button links to `./assets/docs/resume.pdf`.
