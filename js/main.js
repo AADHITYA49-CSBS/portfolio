@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Navbar Scroll Style
   initNavbarScroll();
 
-  // 3. Terminal Contact Form Handler (Formspree + Interactive Feedback)
-  initTerminalContactForm();
+  // 3. Typeform Terminal Connection
+  initTypeformTerminal();
 
   // 4. Smooth Scroll for Anchor Links
   initSmoothScroll();
@@ -86,85 +86,15 @@ function initNavbarScroll() {
 }
 
 /* --------------------------------------------------------------------------
-   Terminal-Style Contact Form Handler
+   Typeform Terminal Connection Handler
    -------------------------------------------------------------------------- */
-function initTerminalContactForm() {
-  const form = document.getElementById('contactForm');
-  const submitBtn = document.getElementById('submitBtn');
-  const statusLog = document.getElementById('terminalStatusLog');
+function initTypeformTerminal() {
+  const iframe = document.getElementById('typeform-iframe');
+  if (!iframe) return;
 
-  if (!form || !submitBtn || !statusLog) return;
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-    const messageInput = document.getElementById('message');
-
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
-
-    if (!name || !email || !message) {
-      showStatus('error', '$ [ERROR 400]: Missing parameters. Please fill in all fields before transmitting.');
-      return;
-    }
-
-    // UI Loading State
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="bi bi-arrow-repeat spin-icon"></i> TRANSMITTING...';
-    showStatus('loading', '$ curl -X POST https://formspree.io/f/... \n$ encrypting payload and dispatching...');
-
-    const formData = new FormData(form);
-    const formAction = form.getAttribute('action');
-
-    // Check if it is a real Formspree endpoint or fallback simulation
-    const isMock = !formAction || formAction.includes('YOUR_FORMSPREE_ID') || formAction.includes('example');
-
-    if (isMock) {
-      // Realistic simulation for development/testing
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="bi bi-send-fill"></i> SEND MESSAGE';
-        showStatus('success', `✔ [200 OK]: Message transmitted successfully!\n$ recipient: aadhitya.dev@gmail.com\n$ status: ACK received. Thank you, ${name}! I will be in touch shortly.`);
-        form.reset();
-      }, 1200);
-      return;
-    }
-
-    try {
-      const response = await fetch(formAction, {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = '<i class="bi bi-send-fill"></i> SEND MESSAGE';
-
-      if (response.ok) {
-        showStatus('success', `✔ [200 OK]: Message received via Formspree!\n$ ack: Thank you, ${name}! Your transmission has been queued.`);
-        form.reset();
-      } else {
-        const data = await response.json();
-        const errDetail = data.errors ? data.errors.map(e => e.message).join(', ') : 'Transmission rejected.';
-        showStatus('error', `$ [ERROR ${response.status}]: ${errDetail}`);
-      }
-    } catch (err) {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = '<i class="bi bi-send-fill"></i> SEND MESSAGE';
-      showStatus('error', `$ [NETWORK_FAIL]: Unable to reach host. Please email directly to aadhitya.dev@gmail.com.`);
-    }
+  iframe.addEventListener('load', () => {
+    console.log('[Terminal] Typeform session connected successfully: nrIdI6pO');
   });
-
-  function showStatus(type, msg) {
-    statusLog.className = `terminal-status-log active ${type}`;
-    statusLog.style.whiteSpace = 'pre-line';
-    statusLog.textContent = msg;
-  }
 }
 
 /* --------------------------------------------------------------------------

@@ -85,7 +85,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-            <a href="./assets/docs/resume.pdf" target="_blank" class="btn-nav-resume">
+            <a href="https://drive.google.com/file/d/1mDSQnck6JtVSCm6D2V7W67XP1r9oB6Lg/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-nav-resume">
               <i class="bi bi-file-earmark-arrow-down"></i> Resume
             </a>
           </li>
@@ -127,8 +127,8 @@
             <a href="#contact" class="btn-outline-tech">
               <i class="bi bi-chat-square-text"></i> Get In Touch
             </a>
-            <a href="./assets/docs/resume.pdf" target="_blank" class="btn-outline-tech">
-              <i class="bi bi-download"></i> Download Resume
+            <a href="https://drive.google.com/file/d/1mDSQnck6JtVSCm6D2V7W67XP1r9oB6Lg/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-outline-tech">
+              <i class="bi bi-download"></i> View Resume
             </a>
           </div>
 
@@ -238,7 +238,7 @@
               <p class="edu-details mt-2">
                 <strong>Specialization:</strong> Computer Science and Business Systems (CSBS)
               </p>
-              <p class="edu-details text-muted mt-1">
+              <p class="edu-description mt-2">
                 Rigorous curriculum combining foundational computer science, algorithm design, enterprise software architecture, and modern business technology systems.
               </p>
             </div>
@@ -257,7 +257,7 @@
               <p class="edu-details mt-2">
                 <strong>Focus:</strong> Computer Science & Mathematics
               </p>
-              <p class="edu-details text-muted mt-1">
+              <p class="edu-description mt-2">
                 Built analytical and quantitative problem-solving foundations through advanced mathematics and early computer programming principles.
               </p>
             </div>
@@ -380,13 +380,13 @@
                 <span class="tech-tag">Spring Boot</span>
                 <span class="tech-tag">MySQL</span>
                 <span class="tech-tag">REST API</span>
-                <span class="tech-tag">Render</span>
+                <span class="tech-tag">Vercel</span>
               </div>
               <div class="project-actions">
                 <a href="https://github.com/AADHITYA49-CSBS/LibrarianSystem" target="_blank" rel="noopener noreferrer" class="btn-project-code">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="https://electramind-ai.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-project-live">
+                <a href="https://librarian-system-4ne1.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-project-live">
                   <i class="bi bi-box-arrow-up-right"></i> Live Demo
                 </a>
               </div>
@@ -411,13 +411,13 @@
                 <span class="tech-tag">React.js</span>
                 <span class="tech-tag">Auth</span>
                 <span class="tech-tag">QA Workflows</span>
-                <span class="tech-tag">Vercel</span>
+                <span class="tech-tag">Render</span>
               </div>
               <div class="project-actions">
                 <a href="https://github.com/AADHITYA49-CSBS/E-machinesQA" target="_blank" rel="noopener noreferrer" class="btn-project-code">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="https://librarian-system-4ne1.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-project-live">
+                <a href="https://electramind-ai.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-project-live">
                   <i class="bi bi-box-arrow-up-right"></i> Live Demo
                 </a>
               </div>
@@ -647,7 +647,7 @@
           </div>
         </div>
 
-        <!-- Right Column: Terminal-Style Contact Form -->
+        <!-- Right Column: Terminal-Style Typeform Window -->
         <div class="col-lg-6">
           <div class="terminal-outer-container">
             <!-- Window Header Bar -->
@@ -658,39 +658,34 @@
                 <span class="dot-green"></span>
               </div>
               <div class="terminal-title-path">~/contact-form</div>
+              <a href="https://form.typeform.com/to/nrIdI6pO" target="_blank" rel="noopener noreferrer" class="terminal-external-link" title="Open Typeform in Fullscreen">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
             </div>
 
-            <!-- Terminal Form Body -->
-            <div class="terminal-form-body">
-              <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-                
-                <!-- Field 1: Name -->
-                <div class="terminal-input-group">
-                  <label for="name" class="terminal-label">$ name</label>
-                  <input type="text" id="name" name="name" class="terminal-input-control" placeholder="Your Name" required autocomplete="name">
-                </div>
+            <!-- Terminal Command Header -->
+            <div class="terminal-cmd-banner">
+              <span><i class="bi bi-terminal"></i> $ typeform init --form nrIdI6pO</span>
+              <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50">CONNECTED</span>
+            </div>
 
-                <!-- Field 2: Email -->
-                <div class="terminal-input-group">
-                  <label for="email" class="terminal-label">$ email</label>
-                  <input type="email" id="email" name="_replyto" class="terminal-input-control" placeholder="your.email@example.com" required autocomplete="email">
-                </div>
+            <!-- Embedded Interactive Typeform -->
+            <div class="terminal-typeform-wrapper">
+              <iframe 
+                id="typeform-iframe"
+                src="https://form.typeform.com/to/nrIdI6pO" 
+                title="Aadhitya Contact Form (Typeform)"
+                allow="camera; microphone; autoplay; encrypted-media;">
+              </iframe>
+            </div>
 
-                <!-- Field 3: Message -->
-                <div class="terminal-input-group">
-                  <label for="message" class="terminal-label">$ message</label>
-                  <textarea id="message" name="message" class="terminal-input-control" placeholder="Tell me about your project or opportunity..." required></textarea>
-                </div>
-
-                <!-- Submit Button: Full-width button with text and icon -->
-                <button type="submit" id="submitBtn" class="btn-terminal-submit">
-                  <i class="bi bi-send-fill"></i>
-                  <span>SEND MESSAGE</span>
-                </button>
-
-                <!-- Interactive Terminal Feedback Log -->
-                <div id="terminalStatusLog" class="terminal-status-log"></div>
-              </form>
+            <!-- Terminal Footer Bar with Quick Direct Launch -->
+            <div class="terminal-footer-bar">
+              <span class="font-mono text-muted" style="font-size: 0.82rem;">$ ready for transmission</span>
+              <a href="https://form.typeform.com/to/nrIdI6pO" target="_blank" rel="noopener noreferrer" class="btn-typeform-direct">
+                <i class="bi bi-send-fill"></i>
+                <span>LAUNCH TYPEFORM FULLSCREEN</span>
+              </a>
             </div>
           </div>
         </div>

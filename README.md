@@ -16,18 +16,18 @@ A sleek, responsive, developer-centric static portfolio website built using **HT
   - **Accenture**: Data Analytics and Visualization Intern (EDA, Analytical workflows, Stakeholder presentations).
   - **NSIC Technical Services Centre**: Mobile Application Developer Intern (Java, Kotlin, XML, Android Studio).
 - **Featured Projects**:
-  - **Librarian System** (Spring Boot / MySQL / Web / Render deployment)
-  - **E-machines QA** (React.js / QA Workflow / Vercel deployment)
+  - **Librarian System** (Spring Boot / MySQL / Web / Vercel deployment)
+  - **E-machines QA** (React.js / QA Workflow / Render deployment)
   - **Product LookUp Automation** (UiPath Studio / VB.NET / Automation)
 - **Technical Skills**:
   - Clean categorized grids for *Development*, *Automation & RPA*, and *Networking & Infrastructure*.
 - **Volunteering & Open Source / Leadership**:
   - Team ZORPHIX National Symposium banner integration.
   - Sponsorship Lead, Media Team Lead, and CIT Green Campus initiative.
-- **Terminal-Style Contact & Opportunities Section (Exact Specification)**:
+- **Terminal-Style Contact & Opportunities Section**:
   - 2-column responsive layout (stacks cleanly on mobile devices).
   - Monospace typography accents, macOS-style window controls (`~/contact-form`).
-  - Formspree AJAX integration with real-time interactive terminal feedback logs.
+  - Integrated with **Typeform** (`https://form.typeform.com/to/nrIdI6pO`) embedded directly in the terminal interface, with quick fullscreen launch button.
 
 ---
 
@@ -51,7 +51,7 @@ Because this is a pure static frontend site, you can run it immediately without 
    ```bash
    git init
    git add .
-   git commit -m "Initial commit of Aadhitya developer portfolio"
+   git commit -m "Launch Aadhitya Developer Portfolio"
    ```
 
 2. **Create a new repository on GitHub**:
@@ -75,23 +75,19 @@ Because this is a pure static frontend site, you can run it immediately without 
 
 ---
 
-## 📬 Setting Up Formspree for the Contact Form
+## 📬 Contact Form (Typeform)
 
-The contact form is already integrated with Formspree AJAX submission:
+The contact form is powered by Typeform:
+- **Form URL**: `https://form.typeform.com/to/nrIdI6pO`
+- Embedded directly into the terminal window on the site with full interactive question flows.
+- Also includes a direct button to launch the form in fullscreen.
 
-1. Sign up for free at [Formspree.io](https://formspree.io).
-2. Create a new form and copy your Form ID (e.g., `xbjnvwzy`).
-3. In `index.html`, locate line ~380:
-   ```html
-   <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-   ```
-4. Replace `YOUR_FORMSPREE_ID` with your actual Formspree ID:
-   ```html
-   <form id="contactForm" action="https://formspree.io/f/xbjnvwzy" method="POST">
-   ```
-5. Commit and push your changes!
+---
 
-*(Note: If left as `YOUR_FORMSPREE_ID`, the form runs in interactive simulation mode so you can test the terminal feedback right away without errors).*
+## 📄 Resume Link
+
+The "Resume" buttons in the navigation bar and hero section are linked to your official Google Drive document:
+`https://drive.google.com/file/d/1mDSQnck6JtVSCm6D2V7W67XP1r9oB6Lg/view?usp=sharing`
 
 ---
 
