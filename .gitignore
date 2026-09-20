@@ -1,0 +1,25 @@
+# AWS / Cloud credentials
+*.pem
+*.key
+credentials
+credentials.*
+.env
+.env.*
+*.secret
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# OS / temporary files
+*.tmp
+*.log
