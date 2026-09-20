@@ -117,3 +117,46 @@ AADHITYA PORTFOLIO/
 │       └── resume-info.txt     # Resume drop instructions
 └── README.md               # Documentation and GitHub Pages deployment guide
 ```
+
+
+---
+
+# ☁️ AWS Cloud Infrastructure Deployment
+
+## Windows Server + IIS Web Hosting on Amazon EC2
+
+As part of my cloud and infrastructure learning, I provisioned and configured a Windows Server environment on AWS EC2 and deployed this portfolio using Microsoft IIS.
+
+### Infrastructure Stack
+
+- **Cloud:** AWS
+- **Compute:** Amazon EC2
+- **OS:** Windows Server 2022
+- **Instance:** t3.micro
+- **Web Server:** IIS
+- **Networking:** VPC, Subnet, Security Groups
+- **Remote Administration:** RDP
+- **Version Control:** Git / GitHub
+- **Automation:** PowerShell
+
+### Deployment Architecture
+
+```text
+                 Internet
+                    |
+                    | HTTP : 80
+                    v
+        +-------------------------+
+        |       AWS EC2           |
+        |   Windows Server 2022   |
+        |                         |
+        |    Security Group       |
+        |    |              |     |
+        |   80             3389   |
+        |   HTTP            RDP    |
+        |                         |
+        |          IIS            |
+        |           |             |
+        |           v             |
+        |     Portfolio Files     |
+        +-------------------------+
